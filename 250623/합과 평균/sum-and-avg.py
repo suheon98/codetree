@@ -1,10 +1,6 @@
-num1_input = input("첫 번째 수를 입력하세요: ")
-num2_input = input("두 번째 수를 입력하세요: ")
+a, b = map(int, input().split())
 
-num1 = float(num1_input)
-num2 = float(num2_input)
-
-total = num1 + num2
+total = a + b
 average = total / 2
-print(f"합: {total}")
-print(f"평균: {average:.2f}")
+
+print(f"{total} {average:.1f}")
