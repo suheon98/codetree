@@ -1,4 +1,4 @@
-n = 4      # 정사각형의 크기   # 수의 시작 값
+n = int(input())     # 정사각형의 크기   # 수의 시작 값
 arr = [[0 for i in range(n)] for i in range(n)] # 1단계: 2차원 배열 만들기
 
 # 2단계: 열 순서로 순회하기
