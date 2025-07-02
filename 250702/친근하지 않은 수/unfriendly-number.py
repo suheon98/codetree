@@ -5,6 +5,5 @@ for i in range (0, a):
         continue
     else:
         b+=1
-        continue
 
 print(b)
