@@ -1,18 +1,30 @@
-# N, M 입력
-N, M = map(int, input().split())
+# 첫 번째 2차원 배열을 구현해 정수를 입력받습니다.
+arr_1 = [
+	list(map(int, input().split()))
+	for _ in range(3)
+]
 
-# 첫 번째 격자 입력
-a = [list(map(int, input().split())) for _ in range(N)]
+input()
 
-# 두 번째 격자 입력
-b = [list(map(int, input().split())) for _ in range(N)]
+# 두 번째 2차원 배열을 구현해 정수를 입력받습니다.
+arr_2 = [
+	list(map(int, input().split()))
+	for _ in range(3)
+]
 
-# 결과 배열 생성
-for i in range(N):
-    row = []
-    for j in range(M):
-        if a[i][j] == b[i][j]:
-            row.append(0)
-        else:
-            row.append(1)
-    print(' '.join(map(str, row)))
+# 2차원 배열을 구현합니다.
+arr_3 = [
+    [0 for _ in range(3)]
+    for _ in range(3)
+]
+
+# 두 배열의 곱을 새로운 배열에 담습니다.
+for i in range(3):
+	for j in range(3):
+		arr_3[i][j] = arr_1[i][j] * arr_2[i][j]
+	
+# 새로운 배열을 출력합니다.
+for i in range(3):        
+    for j in range(3):    
+        print(arr_3[i][j], end=" ")
+    print()
