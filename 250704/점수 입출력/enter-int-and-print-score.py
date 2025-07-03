@@ -1,3 +1,3 @@
 a = int(input())
 
-print(f"Your seore is {a} point.")
+print(f"Your score is {a} point.")
