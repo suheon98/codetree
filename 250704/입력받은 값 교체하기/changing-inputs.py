@@ -1,3 +1,7 @@
 a, b = int(input())
 
-print(b, a, sep=" ")
+temp = a
+b = a
+a = temp
+
+print(a, b, sep=" ")
