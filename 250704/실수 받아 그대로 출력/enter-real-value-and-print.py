@@ -1,4 +1,4 @@
 a = float(input())
 
-print(a)
+print({a:.2f})
 
