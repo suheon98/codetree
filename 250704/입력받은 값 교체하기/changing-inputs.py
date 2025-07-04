@@ -1,8 +1,7 @@
 a, b = map(int,input().split())
 
-temp = a
-a = temp
-b = a
-
+tmp=a
+a=b
+b=tmp
 
 print(a, b, sep=" ")
